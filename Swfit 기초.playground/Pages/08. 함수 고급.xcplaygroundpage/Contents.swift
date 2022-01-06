@@ -33,7 +33,8 @@ func greeting(to friend: String, from me: String){
 }
 
 greeting(to: "hana", from: "HanSol")
-// 외
+// 외부에서는 to라는 전달인자로 함수 호출을 한다.
+// 내부와 외부의 전달인자의 의미가 상이하거나 사용자 입장에서 전달인자 역할을 표현하고 싶을 때 사용한다.
 
 //MARK: -가변 매개변수
 // 전달 받을 값의 개수를 알기 어려울 때 사용할 수 있습니다.
