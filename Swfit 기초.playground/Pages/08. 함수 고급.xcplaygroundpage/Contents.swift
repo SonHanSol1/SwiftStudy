@@ -36,7 +36,10 @@ greeting(to: "hana", from: "HanSol")
 // 외
 
 //MARK: -가변 매개변수
-//func 함수이름(매개변수1이름: 매개변수1타입, 전달인자 레이블 매개변수2이름: 매개변수2타입 ...) -> 반환타입{
+// 전달 받을 값의 개수를 알기 어려울 때 사용할 수 있습니다.
+// 가변 매개변수는 함수당 하나만 가질 수 있습니다.
+
+//func 함수이름(매개변수1이름: 매개변수1타입, 전달인자 레이블 매개변수2이름: 매개변수2타입...) -> 반환타입{
     /* 함수 구현부 */
 //    return
 //}
@@ -44,12 +47,19 @@ greeting(to: "hana", from: "HanSol")
 func sayHelloToFriends(me: String, friends: String...) -> String{
     return "Hello \(friends)! I'm \(me)!"
 }
-
+// 전달인자의 수는 늘려도 괜찮지만 전달인자가 없거나 nil이면 오류발생
+// 아무 것도 전달하고 싶지 않을 때는 생략하면 된다
 print(sayHelloToFriends(me: "hansol", friends: "hana","eric","wing"))
 
 print(sayHelloToFriends(me: "hansol"))
 
 //MARK: -데이터 타입으로서의 함수
+
+// 스위프트는 함수형 프로그래밍 패러다임을 포함하는 다중 패러다임 언어입니다.
+// 스위프트의 함수는 일급객체이므로 변수, 상수 등에 저장이 가능하고
+// 매개변수를 통해 전달할 수도 있습니다.
+
+// 반환타입을 생략할 수 없습니다ㅇ
 //(매개변수1타입, 매개변수2타입 ...)->반환타입
 
 var someFunction: (String, String)->Void = greeting(to:from:)
