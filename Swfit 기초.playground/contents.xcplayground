@@ -1,14 +1,2 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
-    <pages>
-        <page name='06. Array_Dictionary_Set'/>
-        <page name='05. Any,AnyObject,nil'/>
-        <page name='02. 명명법_콘솔로그_문자열'/>
-        <page name='03. 상수와 변수'/>
-        <page name='04. 기본 데이터 타입'/>
-        <page name='07. 함수 기본'/>
-        <page name='08. 함수 고급'/>
-        <page name='09. 조건문'/>
-        <page name='10. 반복문'/>
-    </pages>
-</playground>
+<playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'/>
