@@ -23,7 +23,7 @@ enum Optional<Wrapped> : ExpressibleByNilLiteral {
     case some(Wrapped) // 옵셔널 내부에 값이 있다
 }
 
-optionalValue: Optional<Int> = nil // 옵셔널의 선언의 완전한 문법
+let optionalValue: Optional<Int> = nil // 옵셔널의 선언의 완전한 문법
 //let optionalValue: Int? = nil // 옵셔널 선언은 ?로 만으로 옵셔널을 표현 가능함
 
 //MARK: 옵셔널 표현
