@@ -18,13 +18,13 @@ someFunction(someOptionalParam: nil)
 //MARK: - 옵셔널 문법과 선언
 
 //enum(열거형) + general
-enum Optional<Wrapped>: ExpressibleByNililteral{
-    case none // 옵셔널 값이 없다
+enum Optional<Wrapped> : ExpressibleByNilLiteral {
+    case none // 옵셔널 값이 없다 ExpressibleByNililteral
     case some(Wrapped) // 옵셔널 내부에 값이 있다
 }
 
-let optionalValue: Optional<Int> = nil // 옵셔널의 선언의 완전한 문법
-let optionalValue: Int? = nil // 옵셔널 선언은 ?로 만으로 옵셔널을 표현 가능함
+optionalValue: Optional<Int> = nil // 옵셔널의 선언의 완전한 문법
+//let optionalValue: Int? = nil // 옵셔널 선언은 ?로 만으로 옵셔널을 표현 가능함
 
 //MARK: 옵셔널 표현
 //Implicitly Unwrapped Optional (암시적 추출 옵셔널)
