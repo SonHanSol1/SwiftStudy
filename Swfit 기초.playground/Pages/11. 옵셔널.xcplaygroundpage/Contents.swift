@@ -57,7 +57,8 @@ case .some(let value):
     print("Value is \(value)")
 }
 // nil 할당 가능
-optionalValue = nil
+//optionalValue = nil
 
 // 기존 변수처럼 사용불가 - 옵셔널과 일반 값은 다른 타입이므로 연산불가
 // optionalValue = optionalValue + 1
+
